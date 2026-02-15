@@ -1,3 +1,6 @@
+/* ===== IMPORTAR FUENTES INDUSTRIALES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap');
+
 /* ===== ESTILOS GENERALES ===== */
 * {
     margin: 0;
@@ -6,15 +9,18 @@
 }
 
 body {
-    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: #333;
     line-height: 1.6;
     font-size: 16px;
+    background-color: #f5f5f5;
 }
 
 h1, h2, h3, h4 {
-    font-weight: bold;
-    color: #2c3e50;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #1e2b3c;
 }
 
 .contenedor {
@@ -30,30 +36,31 @@ h1, h2, h3, h4 {
 
 .titulo-seccion {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 3rem;
     margin-bottom: 40px;
     position: relative;
+    text-transform: uppercase;
 }
 
-/* Línea decorativa ROJA debajo de los títulos */
+/* Línea decorativa GUINDA */
 .titulo-seccion::after {
     content: '';
     display: block;
-    width: 70px;
-    height: 3px;
-    background: #c0392b; /* ROJO principal */
+    width: 80px;
+    height: 4px;
+    background: #8B1E1E; /* GUINDA */
     margin: 15px auto 0;
 }
 
 /* ===== HEADER Y MENÚ ===== */
 .header {
     background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .header .contenedor {
@@ -63,7 +70,7 @@ h1, h2, h3, h4 {
 }
 
 .logo-img {
-    height: 45px;
+    height: 50px;
     width: auto;
 }
 
@@ -75,39 +82,41 @@ h1, h2, h3, h4 {
 
 .menu a {
     text-decoration: none;
-    color: #2c3e50;
-    font-weight: 600;
-    font-size: 1rem;
+    color: #1e2b3c;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
     transition: color 0.3s;
+    text-transform: uppercase;
 }
 
 .menu a:hover {
-    color: #c0392b; /* ROJO al pasar el mouse */
+    color: #8B1E1E; /* GUINDA */
 }
 
-/* Botón de menú (Contacto) en ROJO */
 .boton-menu {
-    background: #c0392b; /* ROJO principal */
-    color: white;
-    padding: 10px 25px;
-    border-radius: 4px;
-    text-decoration: none;
+    background: #8B1E1E; /* GUINDA */
+    color: white !important;
+    padding: 8px 25px;
+    border-radius: 0; /* Bordes rectos para look industrial */
+    transition: background 0.3s;
 }
 
 .boton-menu:hover {
-    background: #a8231f; /* ROJO más oscuro */
+    background: #6B0F0F; /* GUINDA más oscuro */
+    color: white !important;
 }
 
 /* ===== HERO / BANNER ===== */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('imagenes/hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 160px 0 90px;
-    margin-top: 75px;
+    padding: 180px 0 100px;
+    margin-top: 70px;
 }
 
 .contenedor-hero {
@@ -116,33 +125,39 @@ h1, h2, h3, h4 {
 }
 
 .hero h1 {
-    font-size: 2.8rem;
+    font-size: 4rem;
     color: white;
     margin-bottom: 20px;
     line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 35px;
     opacity: 0.95;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* Botón del hero en ROJO */
 .boton-hero {
     display: inline-block;
-    background: #c0392b; /* ROJO principal */
+    background: #8B1E1E; /* GUINDA */
     color: white;
-    padding: 14px 35px;
-    font-size: 1.1rem;
-    font-weight: 600;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
     transition: background 0.3s;
+    border: 2px solid transparent;
 }
 
 .boton-hero:hover {
-    background: #a8231f; /* ROJO más oscuro */
+    background: #6B0F0F; /* GUINDA más oscuro */
 }
 
 /* ===== SECCIÓN NOSOTROS ===== */
@@ -159,7 +174,8 @@ h1, h2, h3, h4 {
 
 .nosotros-texto p {
     margin-bottom: 20px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .lista-simple {
@@ -170,8 +186,17 @@ h1, h2, h3, h4 {
 
 .lista-simple li {
     margin-bottom: 10px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-left: 5px;
+    position: relative;
+}
+
+/* Guiones personalizados para la lista */
+.lista-simple li::before {
+    content: "—";
+    color: #8B1E1E; /* GUINDA */
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 .nosotros-imagen {
@@ -180,13 +205,14 @@ h1, h2, h3, h4 {
 
 .nosotros-imagen img {
     width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 3px solid #8B1E1E; /* Borde guinda */
 }
 
 /* ===== SERVICIOS ===== */
 .servicios {
-    background-color: #f8f9fa;
+    background-color: #e9ecef;
 }
 
 .grid-servicios {
@@ -198,29 +224,37 @@ h1, h2, h3, h4 {
 
 .card-servicio {
     background: white;
-    padding: 35px 25px;
-    border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
+    padding: 40px 25px;
+    border-radius: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid #8B1E1E; /* Línea superior guinda */
 }
 
 .card-servicio:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 30px rgba(139, 30, 30, 0.15);
 }
 
 .card-servicio h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 15px;
-    color: #c0392b; /* ROJO para los títulos de servicios */
+    color: #8B1E1E; /* GUINDA */
+    text-transform: uppercase;
+}
+
+.card-servicio p {
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 /* ===== CONTACTO ===== */
 .subtitulo-contacto {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 50px;
     color: #555;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .grid-contacto {
@@ -239,26 +273,30 @@ h1, h2, h3, h4 {
 .ubicacion {
     background: #f8f9fa;
     padding: 25px;
-    border-radius: 6px;
-    border-left: 4px solid #c0392b; /* Borde izquierdo ROJO */
+    border-radius: 0;
+    border-left: 5px solid #8B1E1E; /* Borde izquierdo GUINDA */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .ubicacion h3 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: #1e2b3c;
+    text-transform: uppercase;
 }
 
 .ubicacion p {
     margin-bottom: 10px;
     line-height: 1.7;
+    font-size: 1.1rem;
 }
 
 /* ===== FOOTER ===== */
 .footer {
-    background: #2c3e50;
+    background: #1e2b3c; /* Azul oscuro industrial */
     color: white;
-    padding: 50px 0 25px;
+    padding: 60px 0 30px;
+    border-top: 5px solid #8B1E1E; /* Línea superior guinda */
 }
 
 .footer-contenido {
@@ -275,7 +313,7 @@ h1, h2, h3, h4 {
 }
 
 .logo-footer {
-    height: 40px;
+    height: 45px;
     margin-bottom: 15px;
 }
 
@@ -283,6 +321,7 @@ h1, h2, h3, h4 {
     color: #bdc3c7;
     line-height: 1.7;
     max-width: 400px;
+    font-size: 1.1rem;
 }
 
 .footer-enlaces {
@@ -294,17 +333,22 @@ h1, h2, h3, h4 {
 .footer-enlaces h4 {
     color: white;
     margin-bottom: 15px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
 }
 
 .footer-enlaces a {
     color: #bdc3c7;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 1.1rem;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .footer-enlaces a:hover {
-    color: #c0392b; /* ROJO al pasar el mouse en enlaces del pie */
+    color: #8B1E1E; /* GUINDA */
 }
 
 .footer-copyright {
@@ -312,12 +356,13 @@ h1, h2, h3, h4 {
     padding-top: 25px;
     text-align: center;
     color: #95a5a6;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .footer-copyright a {
-    color: #c0392b; /* ROJO para enlaces de aviso de privacidad */
+    color: #8B1E1E; /* GUINDA */
     text-decoration: none;
+    font-weight: bold;
 }
 
 .footer-copyright a:hover {
@@ -327,15 +372,15 @@ h1, h2, h3, h4 {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .menu {
-        display: none; /* Para móviles, luego puedes agregar menú hamburguesa */
+        display: none; /* Por simplicidad, luego agregas menú hamburguesa */
     }
     
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
     }
     
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     
     .nosotros-contenido {
@@ -343,10 +388,14 @@ h1, h2, h3, h4 {
     }
     
     .titulo-seccion {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
     
     .seccion {
         padding: 50px 0;
+    }
+    
+    .grid-servicios {
+        grid-template-columns: 1fr;
     }
 }
