@@ -1,6 +1,3 @@
-/* ===== IMPORTAR FUENTES INDUSTRIALES ===== */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap');
-
 /* ===== ESTILOS GENERALES ===== */
 * {
     margin: 0;
@@ -9,18 +6,18 @@
 }
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Impact', 'Arial Black', 'Helvetica Bold', sans-serif;
     color: #333;
     line-height: 1.6;
     font-size: 16px;
-    background-color: #f5f5f5;
+    letter-spacing: 0.5px;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
+    font-weight: 900;
+    text-transform: uppercase;
     letter-spacing: 1px;
-    color: #1e2b3c;
+    color: #2c3e50;
 }
 
 .contenedor {
@@ -36,31 +33,32 @@ h1, h2, h3, h4 {
 
 .titulo-seccion {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     position: relative;
     text-transform: uppercase;
+    font-weight: 900;
 }
 
-/* Línea decorativa GUINDA */
 .titulo-seccion::after {
     content: '';
     display: block;
     width: 80px;
     height: 4px;
-    background: #8B1E1E; /* GUINDA */
+    background: #800020; /* GUINDA */
     margin: 15px auto 0;
 }
 
 /* ===== HEADER Y MENÚ ===== */
 .header {
-    background-color: white;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: #111;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 10px 0;
+    padding: 15px 0;
+    border-bottom: 3px solid #800020;
 }
 
 .header .contenedor {
@@ -70,8 +68,9 @@ h1, h2, h3, h4 {
 }
 
 .logo-img {
-    height: 50px;
+    height: 45px;
     width: auto;
+    filter: brightness(1.2);
 }
 
 .menu {
@@ -82,41 +81,42 @@ h1, h2, h3, h4 {
 
 .menu a {
     text-decoration: none;
-    color: #1e2b3c;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    transition: color 0.3s;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.1rem;
     text-transform: uppercase;
+    transition: color 0.3s;
 }
 
 .menu a:hover {
-    color: #8B1E1E; /* GUINDA */
+    color: #800020;
 }
 
 .boton-menu {
-    background: #8B1E1E; /* GUINDA */
-    color: white !important;
-    padding: 8px 25px;
-    border-radius: 0; /* Bordes rectos para look industrial */
-    transition: background 0.3s;
+    background: #800020;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 0;
+    text-decoration: none;
+    border: 2px solid #800020;
 }
 
 .boton-menu:hover {
-    background: #6B0F0F; /* GUINDA más oscuro */
-    color: white !important;
+    background: #4d0013;
+    border-color: #4d0013;
 }
 
 /* ===== HERO / BANNER ===== */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
                 url('imagenes/hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 180px 0 100px;
-    margin-top: 70px;
+    padding: 160px 0 90px;
+    margin-top: 75px;
+    border-bottom: 5px solid #800020;
 }
 
 .contenedor-hero {
@@ -125,39 +125,38 @@ h1, h2, h3, h4 {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: white;
     margin-bottom: 20px;
     line-height: 1.2;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-weight: 900;
+    text-shadow: 3px 3px 0 #800020;
 }
 
 .hero p {
     font-size: 1.3rem;
     margin-bottom: 35px;
     opacity: 0.95;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
 }
 
 .boton-hero {
     display: inline-block;
-    background: #8B1E1E; /* GUINDA */
+    background: #800020;
     color: white;
-    padding: 15px 40px;
+    padding: 16px 40px;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 800;
     text-decoration: none;
-    border-radius: 0;
+    border: 3px solid #800020;
     text-transform: uppercase;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
-    transition: background 0.3s;
-    border: 2px solid transparent;
+    transition: all 0.3s;
 }
 
 .boton-hero:hover {
-    background: #6B0F0F; /* GUINDA más oscuro */
+    background: #4d0013;
+    border-color: #4d0013;
 }
 
 /* ===== SECCIÓN NOSOTROS ===== */
@@ -174,8 +173,8 @@ h1, h2, h3, h4 {
 
 .nosotros-texto p {
     margin-bottom: 20px;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .lista-simple {
@@ -186,17 +185,11 @@ h1, h2, h3, h4 {
 
 .lista-simple li {
     margin-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-left: 5px;
-    position: relative;
-}
-
-/* Guiones personalizados para la lista */
-.lista-simple li::before {
-    content: "—";
-    color: #8B1E1E; /* GUINDA */
-    font-weight: bold;
-    margin-right: 10px;
+    font-weight: 600;
+    border-left: 4px solid #800020;
+    padding-left: 15px;
 }
 
 .nosotros-imagen {
@@ -205,14 +198,13 @@ h1, h2, h3, h4 {
 
 .nosotros-imagen img {
     width: 100%;
-    border-radius: 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    border: 3px solid #8B1E1E; /* Borde guinda */
+    border: 4px solid #800020;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== SERVICIOS ===== */
 .servicios {
-    background-color: #e9ecef;
+    background-color: #1a1a1a;
 }
 
 .grid-servicios {
@@ -223,38 +215,41 @@ h1, h2, h3, h4 {
 }
 
 .card-servicio {
-    background: white;
-    padding: 40px 25px;
-    border-radius: 0;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-top: 5px solid #8B1E1E; /* Línea superior guinda */
+    background: #111;
+    padding: 40px 30px;
+    border: 3px solid #333;
+    transition: all 0.3s;
 }
 
 .card-servicio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(139, 30, 30, 0.15);
+    transform: translateY(-10px);
+    border-color: #800020;
+    box-shadow: 0 15px 30px rgba(128, 0, 32, 0.3);
 }
 
 .card-servicio h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #8B1E1E; /* GUINDA */
+    color: #fff;
     text-transform: uppercase;
+    font-weight: 900;
+    border-bottom: 3px solid #800020;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
 .card-servicio p {
-    font-size: 1.1rem;
-    font-weight: 400;
+    color: #ccc;
+    font-weight: 500;
 }
 
 /* ===== CONTACTO ===== */
 .subtitulo-contacto {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 50px;
     color: #555;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
 }
 
 .grid-contacto {
@@ -271,32 +266,38 @@ h1, h2, h3, h4 {
 }
 
 .ubicacion {
-    background: #f8f9fa;
-    padding: 25px;
-    border-radius: 0;
-    border-left: 5px solid #8B1E1E; /* Borde izquierdo GUINDA */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    background: #111;
+    padding: 30px;
+    border-left: 6px solid #800020;
+    border-bottom: 3px solid #333;
 }
 
 .ubicacion h3 {
     font-size: 1.6rem;
     margin-bottom: 15px;
-    color: #1e2b3c;
+    color: #fff;
     text-transform: uppercase;
+    font-weight: 900;
 }
 
 .ubicacion p {
     margin-bottom: 10px;
     line-height: 1.7;
-    font-size: 1.1rem;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.ubicacion strong {
+    color: #800020;
+    font-weight: 800;
 }
 
 /* ===== FOOTER ===== */
 .footer {
-    background: #1e2b3c; /* Azul oscuro industrial */
+    background: #111;
     color: white;
-    padding: 60px 0 30px;
-    border-top: 5px solid #8B1E1E; /* Línea superior guinda */
+    padding: 50px 0 25px;
+    border-top: 5px solid #800020;
 }
 
 .footer-contenido {
@@ -313,15 +314,16 @@ h1, h2, h3, h4 {
 }
 
 .logo-footer {
-    height: 45px;
+    height: 40px;
     margin-bottom: 15px;
+    filter: brightness(1.2);
 }
 
 .footer-logo p {
-    color: #bdc3c7;
+    color: #999;
     line-height: 1.7;
     max-width: 400px;
-    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .footer-enlaces {
@@ -333,36 +335,36 @@ h1, h2, h3, h4 {
 .footer-enlaces h4 {
     color: white;
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
+    font-weight: 900;
 }
 
 .footer-enlaces a {
-    color: #bdc3c7;
+    color: #999;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 1.1rem;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .footer-enlaces a:hover {
-    color: #8B1E1E; /* GUINDA */
+    color: #800020;
 }
 
 .footer-copyright {
-    border-top: 1px solid #34495e;
+    border-top: 2px solid #333;
     padding-top: 25px;
     text-align: center;
-    color: #95a5a6;
-    font-size: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .footer-copyright a {
-    color: #8B1E1E; /* GUINDA */
+    color: #800020;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .footer-copyright a:hover {
@@ -372,15 +374,15 @@ h1, h2, h3, h4 {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .menu {
-        display: none; /* Por simplicidad, luego agregas menú hamburguesa */
+        display: none;
     }
     
     .hero h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
     
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .nosotros-contenido {
@@ -388,14 +390,10 @@ h1, h2, h3, h4 {
     }
     
     .titulo-seccion {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .seccion {
         padding: 50px 0;
-    }
-    
-    .grid-servicios {
-        grid-template-columns: 1fr;
     }
 }
