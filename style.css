@@ -35,12 +35,13 @@ h1, h2, h3, h4 {
     position: relative;
 }
 
+/* Línea decorativa ROJA debajo de los títulos */
 .titulo-seccion::after {
     content: '';
     display: block;
     width: 70px;
     height: 3px;
-    background: #2c5aa0;
+    background: #c0392b; /* ROJO principal */
     margin: 15px auto 0;
 }
 
@@ -81,11 +82,12 @@ h1, h2, h3, h4 {
 }
 
 .menu a:hover {
-    color: #2c5aa0;
+    color: #c0392b; /* ROJO al pasar el mouse */
 }
 
+/* Botón de menú (Contacto) en ROJO */
 .boton-menu {
-    background: #2c5aa0;
+    background: #c0392b; /* ROJO principal */
     color: white;
     padding: 10px 25px;
     border-radius: 4px;
@@ -93,7 +95,7 @@ h1, h2, h3, h4 {
 }
 
 .boton-menu:hover {
-    background: #1e3d6f;
+    background: #a8231f; /* ROJO más oscuro */
 }
 
 /* ===== HERO / BANNER ===== */
@@ -126,9 +128,10 @@ h1, h2, h3, h4 {
     opacity: 0.95;
 }
 
+/* Botón del hero en ROJO */
 .boton-hero {
     display: inline-block;
-    background: #d9534f;
+    background: #c0392b; /* ROJO principal */
     color: white;
     padding: 14px 35px;
     font-size: 1.1rem;
@@ -139,7 +142,7 @@ h1, h2, h3, h4 {
 }
 
 .boton-hero:hover {
-    background: #c9302c;
+    background: #a8231f; /* ROJO más oscuro */
 }
 
 /* ===== SECCIÓN NOSOTROS ===== */
@@ -209,7 +212,7 @@ h1, h2, h3, h4 {
 .card-servicio h3 {
     font-size: 1.4rem;
     margin-bottom: 15px;
-    color: #2c5aa0;
+    color: #c0392b; /* ROJO para los títulos de servicios */
 }
 
 /* ===== CONTACTO ===== */
@@ -237,7 +240,7 @@ h1, h2, h3, h4 {
     background: #f8f9fa;
     padding: 25px;
     border-radius: 6px;
-    border-left: 4px solid #2c5aa0;
+    border-left: 4px solid #c0392b; /* Borde izquierdo ROJO */
 }
 
 .ubicacion h3 {
@@ -301,7 +304,7 @@ h1, h2, h3, h4 {
 }
 
 .footer-enlaces a:hover {
-    color: #4a90e2;
+    color: #c0392b; /* ROJO al pasar el mouse en enlaces del pie */
 }
 
 .footer-copyright {
@@ -313,14 +316,18 @@ h1, h2, h3, h4 {
 }
 
 .footer-copyright a {
-    color: #4a90e2;
+    color: #c0392b; /* ROJO para enlaces de aviso de privacidad */
     text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline;
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .menu {
-        display: none; /* Para móviles, puedes después agregar un menú hamburguesa */
+        display: none; /* Para móviles, luego puedes agregar menú hamburguesa */
     }
     
     .hero h1 {
